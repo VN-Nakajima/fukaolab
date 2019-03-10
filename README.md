@@ -1,2 +1,2 @@
 # fukaolab
-ritumeikan university fukaolab 
+ritsumeikan university fukaolab 
