@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <title> 深尾研</title>
+   <link rel="icon" href="favicon.ico">
+   <meta name="description" content="深尾教授の研究室です">
+   <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+   <header>
+     <nav>
+       <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li><a href="today.html">MEMBER</a></li>
+         <li  class="current"><a href="access.html">ACCESS</a></li>
+       </ul>
+     </nav>
+   </header>
+
+     <div class="contents">
+       <h1>Ritsumeikan University</h1>
+       <h1> Plant Molecular Physiology FUKAOLAB</h1>
+     </div>
+
+
+
+   <section class="load"  style ="margin: 0 auto; width: 650px;">
+     <h2 class="gaiyou">ACCESS</h2>
+     <h2>住所    〒525-8557</h2>
+     <h2>滋賀県草津市野路東１丁目１－１</h2>
+     <h3>「ＪＲ南草津駅」から近江鉄道バス「立命館大学行き」に乗り換え約２０分<dd>
+     下記マップの番号40番。バイオリンク４階の406号室が研究室です。<dd>エレベーター降りて左すぐなのでわかりやすいです。</h3>
+     <img src="img/map.jpg" width="700" height="360" alt="マップのアイコン">
+   </section>
+
+   <div id="footer" class="bb">
+    <p><a href="mailto:ike7228@gmail.com" target="_blank">お問い合わせ</a></p>
+    <p id="copyright">(c) I-yoshihiko</p>
+   </div>
+   <p id="page-top"><a href="#">PAGE TOP</a></p>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script>
+     $(function () {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スルスルっとスクロールでトップへもどる
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+        });
+    });
+   </script>
+
+
+
+
+ </body>
+</html>
