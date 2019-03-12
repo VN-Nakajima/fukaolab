@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <title> 深尾研</title>
+   <link rel="icon" href="favicon.ico">
+   <meta name="description" content="深尾教授の研究室です">
+   <link rel="stylesheet" href="css/styles.css">
+   <link href="https://fonts.googleapis.com/css?family=Kaushan+Script rel="stylesheet">
+ </head>
+ <body>
+
+   <header>
+
+     <nav>
+       <ul>
+         <li class="current"><a href="index.html">HOME</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+         <li><a href="today.html">MEMBER</a></li>
+         <li><a href="access.html">ACCESS</a></li>
+       </ul>
+     </nav>
+
+   </header>
+   <div class="contents">
+
+    <h1>Ritsumeikan University</h1>
+    <h1> Plant Molecular Physiology FUKAOLAB</h1>
+
+   </div>
+
+       <p id="slideshow">
+         <img src="img/zeni.jpg" alt="バブル" width="620" height="350" class="active">
+         <img src="img/0301b.jpg" alt="プラスミド２"  width="620" height="350">
+         <img src="img/hikaru.jpg" alt="プラスミド"  width="620" height="350">
+         <img src="img/0301a.jpg" alt="ゼニゴケ"  width="620" height="350">
+       </p>
+
+
+       <p id="keikou">
+         <img src="img/bubble2.jpg" width="400" height="260" alt="顕微鏡のアイコン" align="left" hspace="20">
+          <b>A-STEP バブルプロジェクト</b>
+          <br>本来は医療現場で血栓や眼球の治療に使われるメスを<br>バブルによるインジェクションの為に使用しています。&emsp;&emsp;&emsp;&emsp;この研究は立命館大学、九州大学、株式会社BEXとの&emsp;&emsp;&emsp;&emsp;&emsp;共同研究によって行わています。
+
+       </p>
+
+       <p class="ms">
+       <img src="img/0301.jpg" width="400" height="260" alt="培地のアイコン" align="left" hspace="20">
+      <b>様々な植物を対象とした実験</b>
+
+        <br>シロイヌナズナ、ホウレンソウ、トマト、ゼニゴケ等、&emsp;&emsp;&emsp;&emsp;&emsp;様々な植物サンプルに対して実験を行っております。
+       </p>
+
+       <p class="pcr">
+         <img src="img/matumotosan.png" width="400" height="260" alt="電気泳動" align="left" hspace="20">
+         <b>植物の亜鉛欠乏耐性へのメカニズム</b>
+         <br>植物が亜鉛欠乏耐を示すメカニズムについて遺伝子や&emsp;&emsp;&emsp;&emsp;&emsp;タンパク質レベルで実験を行っております。
+         <br>亜鉛が欠乏すると植物は根の伸長が阻害されるなどの&emsp;&emsp;&emsp;&emsp;&emsp;生育阻害を受けます。
+       </p>
+
+
+
+
+   <div id="footer" class="aa">
+    <p><a href="mailto:ike7228@gmail.com" target="_blank">お問い合わせ</a></p>
+    <p id="copyright">(c) I-yoshihiko</p>
+   </div>
+
+
+
+   <p id="page-top"><a href="#">PAGE TOP</a></p>
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script>
+     $(function () {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スルスルっとスクロールでトップへもどる
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+});
+   </script>
+
+
+   <!-- ここからスライドショー -->
+   <script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 2000 );
+});
+</script>
+
+<!-- <script>
+  var hoi =document.getElementsByTagName('div')[1];
+  hoi.addEventListener('change',function(){
+    location.href ='http://yahoo.co.jp';
+  });
+</script> -->
+
+
+
+
+ </body>
+</html>
