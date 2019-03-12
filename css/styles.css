@@ -1,0 +1,346 @@
+body {
+ color: #333;
+ font-family: verdana;
+ margin: 0px;
+}
+
+.access{
+  border-bottom: 4px solid gray;
+}
+
+section{
+  text-align: center;
+}
+
+section h1{
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size:60px;
+}
+
+section p {
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+
+.about{
+  width: 400px;
+  margin: 0 auto 60px;
+
+
+}
+
+.about p{
+  text-align: center;
+  font-size:20px;
+  margin-bottom:auto;
+
+}
+
+.about h1{
+  font-size:40px;
+}
+
+.rab{
+    background-color:cornsilk;
+}
+
+.load p{
+  font-size:20px;
+  margin-bottom:0px;
+}
+
+
+section{
+  font-family:serif;
+}
+footer{
+  font-family:serif;
+}
+
+.contents{
+  text-align:center
+}
+
+.contents h1{
+  font-family: 'Vollkorn', serif;
+  font-size:50px;
+}
+
+
+
+
+
+
+
+
+
+
+.fadein {
+  opacity : 0;
+  transform: translateY(40px);
+  transition: all 0.3s;
+}
+
+
+
+
+
+
+#fade{
+  position:absolute;
+  top:400px;
+  right:160px;
+  font-size:25px;
+  background-color:whitesmoke;
+}
+#fade2{
+  position:absolute;
+  top:1130px;
+  right:160px;
+  font-size:25px;
+  background-color:whitesmoke;
+}
+#fade3{
+  position:absolute;
+  top:2110px;
+  right:160px;
+  font-size:25px;
+  background-color:whitesmoke;
+}
+#fade4{
+  position:absolute;
+  top:3350px;
+  right:160px;
+  font-size:25px;
+  background-color:whitesmoke;
+}
+
+/* myonはaboutの画像 */
+.myon{
+  position:absolute;
+  top:760px;
+  left:163px;
+}
+.myon2{
+  position:absolute;
+  top:1730px;
+  left:163px;
+}
+.myon3{
+  position:absolute;
+  top:2990px;
+  left:163px;
+}
+
+
+
+
+
+
+
+
+
+nav{
+  border-bottom:1px solid #ccc;
+  /* position:absolute;
+  top:100px */
+
+}
+nav ul{
+  display:table;
+  margin:0 auto;
+  padding:0;
+  width:80%;
+  text-align:center;
+
+}
+nav ul li{
+  display:table-cell;
+  min-width: 50%;
+  border-right: 1px solid #ccc;
+}
+
+nav ul li:first-child{
+  border-left:1px solid #ccc;
+}
+
+nav ul li a{
+  display:block;
+  width:100%
+  padding:10px 0;
+  text-decoration:none;
+  color:#aaa;
+  /* color:papayawhip; */
+  font-size:28px;
+  font-family: 'Vollkorn', serif;
+}
+
+nav ul li a:hover{
+  background-color:#eaf4fc;
+  border-bottom:5px solid #eaf4fc;
+}
+nav ul li.current{
+  font-weight:bold;
+}
+
+
+nav ul li.current a{
+  border-bottom:5px solid forestgreen;
+  color:forestgreen;
+  /* color:papayawhip; */
+}
+#footer {
+	margin-top: 30px;
+	border-top: 3px solid #745850;
+	padding-top: 20px;
+	padding-bottom: 20px;
+  background-color:forestgreen;
+  width:100%;
+
+}
+.aa{
+  position:absolute;
+  top:1650px;
+}
+
+.ii{
+  position:absolute;
+}
+.bb{
+  position:absolute;
+
+}
+
+#copyright
+	text-align: center;
+}
+#copyright a{
+	text-decoration: none;
+}
+
+
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+}
+
+#page-top a {
+    display: block;
+    background: #666;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#page-top a:hover {
+    background: #999;
+    text-decoration: none;
+}
+
+#keikou{
+  position:absolute;
+  /* left:20px; */
+  top:700px;
+  left:80px;
+  font-size:25px;
+  font-family: 'Vollkorn', serif;
+
+}
+.ms{
+  position:absolute;
+  top:1000px;
+  left:80px;
+  font-size:25px;
+  font-family: 'Vollkorn', serif;
+
+}
+
+
+.pcr{
+  position:absolute;
+  top:1300px;
+  left:80px;
+  font-size:25px;
+  font-family: 'Vollkorn', serif;
+}
+
+
+.ai{
+  position:absolute;
+  top:3900px;
+}
+
+/* ここからスライド */
+#slideshow{
+  /* position:relative;
+  width:40px;
+  height:26px; */
+  position:absolute;
+  /* top:1200px; */
+  right:60%;
+  left:27%;
+}
+#slideshow img{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:8;
+  opacity:0.0;
+}
+#slideshow img.active{
+  z-index:10;
+  opacity:1.0;
+}
+#slideshow img.last-active{
+  z-index:9;
+}
+
+.gaiyou{
+  text-align:center;
+  background-color:whitesmoke;
+  display:block;
+  border-left:20px solid green;
+  border-right:20px solid green;
+  font-family:serif;
+}
+
+.border{
+  border-top:2px solid red;
+}
+
+.list ul{
+  padding: 0;
+  position: relative;
+}
+.list li{
+  color:block;
+  border-left:solid 8px #8ac141;
+  background:whitesmoke;
+  margin-bottom:5px;
+  line-height:1.5;
+  border-radius: 0 15px 15px 0;
+  padding:0.5em;
+}
+.list{
+  position:absolute;
+  top:310px;
+  left:0px;
+}
+/* :#fcfcfc */
+
+#koi{
+  font-family:serif;
+  font-size:20px;
+}
+
+.bosyuu{
+  background:whitesmoke;
+}
